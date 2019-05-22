@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("FPS: " + (1 / Time.deltaTime));
+        //Debug.Log("FPS: " + (1 / Time.deltaTime));
         SetAnimations();
         GetActions();
         SetMouse();
@@ -102,7 +102,7 @@ public class PlayerScript : MonoBehaviour
         //Debug.Log("Caminando: " + isWalking);
         //inputH = Input.GetAxis("Horizontal");
         inputV = Input.GetAxis("Vertical");
-        Debug.Log("Input V: " + inputV);
+        //Debug.Log("Input V: " + inputV);
 
         float currentRotation = transform.rotation.eulerAngles.y * Mathf.Deg2Rad;
 
